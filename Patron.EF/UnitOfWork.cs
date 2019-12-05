@@ -1,12 +1,13 @@
-﻿using Patron.EF.EFDataObjects;
+﻿
+using Patron.EF.EFMap;
 
 namespace Patron.EF
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly PatronEntities _context;
+        private readonly PatronDbContext _context;
 
-        public UnitOfWork(PatronEntities context)
+        public UnitOfWork(PatronDbContext context)
         {
             _context = context;
             Customers = new TailsCardRepository(_context);

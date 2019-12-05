@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Patron.EF.EFDataObjects;
+
+using Patron.EF.EFMap;
 
 namespace Patron.EF
 {

@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Patron.EF.EFDataObjects;
+
+using Patron.EF.EFMap;
 
 namespace Patron.EF
 {
     public class TailsCardRepository : Repository<TailsCard>, ITailsCardRepository
     {
-        private readonly PatronEntities _customerDbEntities;
+        private readonly PatronDbContext _customerDbEntities;
 
-        public TailsCardRepository(PatronEntities context) : base(context)
+        public TailsCardRepository(PatronDbContext context) : base(context)
         {
             _customerDbEntities = context;
         }
