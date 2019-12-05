@@ -6,7 +6,7 @@ using Patron.EF.EFMap;
 
 namespace Patron.EF
 {
-    public class TailsCardRepository : Repository<TailsCard>, ITailsCardRepository
+    public class TailsCardRepository : Repository<TaisCard>, ITailsCardRepository
     {
         private readonly PatronDbContext _customerDbEntities;
 
@@ -15,7 +15,7 @@ namespace Patron.EF
             _customerDbEntities = context;
         }
 
-        public IEnumerable<TailsCard> GetBestCustomers(int amountOfCustomers)
+        public IEnumerable<TaisCard> GetBestCustomers(int amountOfCustomers)
         {
             if (amountOfCustomers > _customerDbEntities.TailsCard.ToList().Count)
             {

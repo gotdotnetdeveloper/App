@@ -12,7 +12,7 @@ namespace Patron.EF.EFMap
         {
         }
 
-        public virtual DbSet<TailsCard> TailsCard { get; set; }
+        public virtual DbSet<TaisCard> TailsCard { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -6,8 +6,8 @@ namespace Patron.EF.EFMap
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("TailsCard")]
-    public partial class TailsCard : BindableBase
+    [Table("Card")]
+    public partial class TaisCard : BindableBase
     {
         private int _cardId;
         private string _creator;
@@ -19,6 +19,7 @@ namespace Patron.EF.EFMap
             get => _cardId;
             set => SetProperty(ref _cardId, value);
         }
+        public Guid Id { get; set; }
 
         public int? UserId { get; set; }
 

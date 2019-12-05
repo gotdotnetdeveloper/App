@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFMap\PatronDbContext.cs" />
-    <Compile Include="EFMap\TailsCard.cs" />
+    <Compile Include="EFMap\TaisCard.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="ITailsCardRepository.cs" />

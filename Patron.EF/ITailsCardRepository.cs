@@ -4,8 +4,8 @@ using Patron.EF.EFMap;
 
 namespace Patron.EF
 {
-    public interface ITailsCardRepository : IRepository<TailsCard>
+    public interface ITailsCardRepository : IRepository<TaisCard>
     {
-        IEnumerable<TailsCard> GetBestCustomers(int amountOfCustomers);
+        IEnumerable<TaisCard> GetBestCustomers(int amountOfCustomers);
     }
 }
