@@ -12,13 +12,14 @@ namespace Patron.EF.EFMap
         private int _cardId;
         private string _creator;
 
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int CardId
         {
             get => _cardId;
             set => SetProperty(ref _cardId, value);
         }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public Guid Id { get; set; }
 
         public int? UserId { get; set; }
